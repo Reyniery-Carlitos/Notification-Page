@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;800&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <title> Notifications page</title>
+
+  <style>
+    body {
+      font-family: 'Plus Jakarta Sans';
+    }
+
+    .read {
+      background: #fff !important;
+    }
+  </style>
+</head>
+
+<body class="bg-gray-50 flex flex-col items-center justify-center gap-5">
+  <main class="bg-white p-2 md:w-4/5 md:mt-20 md:rounded-lg md:p-5 lg:w-3/6 shadow-xl" id="containerMainH">
+    <header class="flex flex-row justify-between pt-7">
+      <h1 class="text-2xl pb-7"> <b> Notifications <span class="bg-blue-900 text-white w-7 p-1 rounded-md"
+            id="number-notification"> 3
+          </span>
+        </b>
+      </h1>
+
+      <button class="text-slate-700" onclick="markAsUnread()"> Mark all as read </button>
+
+    </header>
+
+    <div class="flex flex-row gap-4 bg-slate-50 p-4 rounded-lg mb-2 item">
+      <img src="./assets/images/avatar-mark-webber.webp" class="w-14 h-14" alt="User profile">
+      <div class="text-md">
+        <h2>
+          <b> Mark Webber </b>
+          <span class="text-slate-700"> reacted to your recent post
+            <b class="text-slate-500">
+              My first tournament today!
+            </b>
+          </span>
+        </h2>
+        <p class="text-slate-400"> 1m ago </p>
+      </div>
+    </div>
+
+    <div class="flex flex-row gap-4 bg-slate-50 p-4 rounded-lg mb-2 item">
+      <img src="./assets/images/avatar-angela-gray.webp" class="w-14 h-14" alt="User profile">
+      <div class="text-md">
+        <h2>
+          <b> Angela Gray </b>
+          <span class="text-slate-700"> followed you </span>
+        </h2>
+        <p class="text-slate-400"> 1m ago </p>
+      </div>
+    </div>
+
+    <div class="flex flex-row gap-4 bg-slate-50 p-4 rounded-lg mb-2 item">
+      <img src="./assets/images/avatar-jacob-thompson.webp" class="w-14 h-14" alt="User profile">
+      <div class="text-md">
+        <h2>
+          <b> Jacob Thompson </b>
+          <span class="text-slate-700"> has joined your group
+            <b class="">
+              <a href="#" class="text-blue-900">
+                Chess Club
+              </a>
+            </b>
+          </span>
+        </h2>
+        <p class="text-slate-400"> 1 day ago </p>
+      </div>
+    </div>
+
+    <div class="flex flex-row gap-4 bg-slate-50 p-4 rounded-lg mb-2 read item">
+      <img src="./assets/images/avatar-rizky-hasanuddin.webp" class="w-14 h-14" alt="User profile">
+      <div class="text-md">
+        <h2>
+          <b> Rizky Hasanuddin </b>
+          <span class="text-slate-700"> sent you a private message </span>
+        </h2>
+        <p class="text-slate-400"> 5 days ago</p>
+        <div class="text-slate-700 border border-solid border-gray-300 rounded-lg p-3 mt-5 pr-6">
+          <p> Hello, thanks for setting up the Chess Club. I've been a member for a few weeks now and
+            I'm already having lots of fun and improving my game. </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="flex flex-row gap-4 bg-slate-50 p-4 rounded-lg mb-2 read item">
+      <img src="./assets/images/avatar-kimberly-smith.webp" class="w-14 h-14" alt="User profile">
+      <div class="text-md">
+        <h2>
+          <b> Kimberly Smith </b>
+          <span class="text-slate-700"> commented on your picture </span>
+        </h2>
+        <p class="text-slate-400"> 1 week ago </p>
+      </div>
+    </div>
+
+    <div class="flex flex-row gap-4 bg-slate-50 p-4 rounded-lg mb-2 read item">
+      <img src="./assets/images/avatar-nathan-peterson.webp" class="w-14 h-14" alt="User profile">
+      <div class="text-md">
+        <h2>
+          <b> Nathan Peterson </b>
+          <span class="text-slate-700"> reacted to your recent post
+            <b class="text-slate-500">
+              5 end-game strategies to increase your win rate
+            </b>
+          </span>
+        </h2>
+        <p class="text-slate-400"> 2 weeks ago </p>
+      </div>
+    </div>
+
+    <div class="flex flex-row gap-4 bg-slate-50 p-4 rounded-lg mb-2 read item">
+      <img src="./assets/images/avatar-anna-kim.webp" class="w-14 h-14" alt="User profile">
+      <div class="text-md">
+        <h2>
+          <b> Anna Kim </b>
+          <span class="text-slate-700"> left the group
+            <b class="">
+              <a href="#" class="text-blue-900">
+                Chess Club
+              </a>
+            </b>
+          </span>
+        </h2>
+        <p class="text-slate-400"> 2 weeks ago </p>
+      </div>
+    </div>
+
+  </main>
+  <div class="mb-5">
+    Coded by <a href="https://github.com/Reyniery-Carlitos/" class="text-blue-600" target="_blank"> Carlos Rubio </a>.
+  </div>
+
+
+  <script src="./assets/JS/toggle.js"> </script>
+</body>
+
+</html>
